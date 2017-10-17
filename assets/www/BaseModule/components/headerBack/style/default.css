@@ -1,0 +1,32 @@
+.aigov-header-back-box{height:4.5em;width:100%}
+
+.aigov-header {position:absolute;top: 0;left: 0;right: 0;height: 3em;line-height: 3em;text-align: center;	z-index: 1;background: transparent url('images/headerBg.png') no-repeat;-moz-background-size:100% auto;-webkit-background-size:100% auto;-o-background-size:100% auto;background-size:100% auto;}
+
+.aigov-header-title {font-size: 1em;color: #FFF;}
+
+.aigov-header-back{position: absolute;width: 3em;height: 3em;left: 0em;bottom:0em;}
+.aigov-header-back a{position: absolute;width: 3em;height: 3em;left: 0em;bottom:0;background: transparent url('images/back.png') no-repeat;background-position: 0.5em;-webkit-background-size: 60% 60%;}
+.aigov-header-back a:active {background-color: #008040;filter: alpha(opacity=40);opacity: 0.40;}
+.aigov-header-login{position: absolute;width: 5.5em;height: 2em;right: 1em;bottom: 0.5em;background: transparent url('images/headerLogo.png') no-repeat;-webkit-background-size: 100% 100%;}
+
+.aigov-header-button{position: absolute;height: 3em;right: 1em;bottom:0em;line-height: 3em;vertical-align: middle;}
+
+.aigov-header-button a{font-size: 0.9em;border: 1px #fff solid;color: #fff;border-radius: 1em;padding: 0.3em 0.7em;margin-left: 1em;}
+.aigov-header-button a:active {background-color: #e4e4e4}
+
+.ai-body-box{position:absolute;top: 3em;right: 0em;left:0em;bottom:0em;overflow:auto;}
+
+
+.ai-hospitalInfo-head{position: relative;background:url("images/headerBg.png");-moz-background-size:auto 100%;-webkit-background-size:auto 100%;-o-background-size:auto 100%;background-size:auto 100%;border-bottom: 1px #dcdcdc solid;overflow:hidden;width: 100%;height: 6em;}
+.ai-hospitalInfo-head .aigov-header-back{position: absolute;width: 3em;height: 3em;left: 0em;bottom:3em;}
+.ai-hospitalInfo-head .aigov-header-button{position: absolute;height: 3em;right: 1em;bottom:3em;line-height: 3em;vertical-align: middle;}
+.aigov-hospitalInfo-login {position: absolute;width: 5.5em;height: 2em;right: 1em;bottom: 3.5em;background: transparent url('images/headerLogo.png') no-repeat;-webkit-background-size: 100% 100%;}
+.ai-hospitalInfo-scroll{position: absolute;top:6em;right:0px;bottom:0px;left:0px;overflow:auto;background-color: #fff;}
+.ai-hospitalInfo-button{box-sizing:border-box;-moz-box-sizing:border-box; -webkit-box-sizing:border-box;padding:0em 1.5em;}
+.ai-hospitalInfo-title{text-align: center;color: #fff;font-size: 1em;height: 3em;line-height: 3em;vertical-align: middle;}
+.ai-hospitalInfo-button ul{width: 100%;}
+.ai-hospitalInfo-button ul li{float: left;width: 50%;height: 100%;position: relative;text-align: center;color: #fff;font-size: 1em;box-sizing:border-box;-moz-box-sizing:border-box; -webkit-box-sizing:border-box;height: 2em;line-height:2em;vertical-align: middle;}
+.ai-hospitalInfo-button ul li a{position:absolute;top:0px;bottom:0px;left:0px;right:0px;letter-spacing:0.5em;z-index:1;}
+.ai-hospitalInfo-button ul li.cur div{position:absolute;right: 0;top: 0;width: 100%;height: 100%;background:#fff;filter: alpha(opacity=40);opacity: 0.40;}
+.ai-hospitalInfo-button ul li.ai-hospitalInfo-button-l{border-bottom: 1.5px solid #fff;border-top: 1.5px solid #fff;border-right: 1.5px solid #fff;border-left: 1.5px solid #fff;border-radius: 0.5em 0em 0em 0.5em;-moz-border-radius: 0.5em 0em 0em 0.5em;-webkit-border-radius:0.5em 0em 0em 0.5em;overflow: hidden;}
+.ai-hospitalInfo-button ul li.ai-hospitalInfo-button-r{border-bottom: 1.5px solid #fff;border-top: 1.5px solid #fff;border-right: 1.5px solid #fff;border-radius: 0em 0.5em 0.5em 0em;-moz-border-radius: 0em 0.5em 0.5em 0em;-webkit-border-radius:0em 0.5em 0.5em 0em;overflow: hidden;}

@@ -1,0 +1,121 @@
+﻿@charset "utf-8";
+
+/**************************** 主布局 ****************************/
+
+/* 导航区域 */
+.aigov-buttonlist-navBox{
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	width:100%;
+	height:3.5em;
+	background: #eee;
+	/** 不加的话点击事件会触发菜单后面的记录事件,类似点击穿透**/
+	z-index:1000;
+	border-top: 1px #e5e5e6 solid;
+}
+
+
+
+/**************************** 主导航 ****************************/
+/* 主导航UL */
+.aigov-buttonlist-navBtnS{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;	
+}
+
+.aigov-buttonlist-navBtnS li{
+	float:left;
+	width:20%;
+	height:100%;
+	position:relative;
+}
+.aigov-buttonlist-navBtnS li.cur{
+	background:#222;
+}
+.aigov-buttonlist-navBtnS li.select a{
+	color:#70b296;
+}
+.cricle{background:#f60; width:10px; height:10px; position: absolute; text-align: center; border-radius:50%; color:#fff; z-index:4; right: 15px; top: 5px;}
+
+.aigov-buttonlist-navBtnS li a{
+	font-size:0.7em;
+	position:absolute;
+	bottom:0.5em;
+	left:0;
+	right:0;
+	text-align:center;
+	color:#000000;
+}
+
+
+.aigov-buttonlist-navBtnS li span{
+	position:absolute;
+	top:0.5em;
+	left:50%;
+	margin-left:0.5em;
+	
+}
+
+.aigov-buttonlist-navBtnS li img{
+	position: absolute;
+    width: 1.6em;
+    height: 1.6em;
+    bottom: 1.5em;
+    left: 50%;
+    margin-left: -0.8em;
+}
+
+.aigov-buttonlist-navBtnS li img.aigov-buttonlist-navBtnIcon{
+	display:block;
+}
+
+.aigov-buttonlist-navBtnS li img.aigov-buttonlist-navBtnIconSelect{
+	display:none;
+}
+
+.aigov-buttonlist-navBtnS li.select img.aigov-buttonlist-navBtnIcon{
+	display:none;
+}
+
+.aigov-buttonlist-navBtnS li.select img.aigov-buttonlist-navBtnIconSelect{
+	display:block;
+}
+
+/* 提示 */
+.aigov-buttonlist-tips{
+	font-size:0.8em;
+	display:block;
+	background:#f00f0f;
+	border:2px #fff solid;
+	border-radius:1em;
+	color:#fff;	
+	position:absolute;
+	padding:0.1em 0.3em;
+	height:1.2em;
+	line-height:1.1em;
+	min-width:1em;
+	text-align:center;
+}
+
+.aigov-buttonlist-navBtnS li[id="aigovMain"] img{
+	width: 2.6em;
+    height: 2.6em;
+    margin-left: -1.3em;
+    left: 50%;
+    bottom: 0.5em;
+}
+
+.aigov-buttonlist-navBtnS li[id="aigovMain"].select a{
+	display: none;
+}
+
+.aigov-buttonlist-navBtnS li[id="aigovMain"] a{
+	display: none;
+}

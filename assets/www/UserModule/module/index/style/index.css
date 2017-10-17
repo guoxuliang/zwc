@@ -1,0 +1,180 @@
+/**
+ *@author keyz@asiainfo.com
+ *@createtime 2016-05-27
+**/
+@charset "utf-8";
+.ai-index-box{
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    -webkit-overflow-scrolling: touch;
+}
+.ai-index-box-bd{
+	background-color: #e9ecf5;
+	overflow:hidden;
+}
+.ai-index-head{
+	background:#fff;
+	border-bottom: 1px #dcdcdc solid;
+	overflow:hidden;
+}
+
+.ai-index-swiper {
+    width: 100%;
+    overflow:hidden;
+    font-size: 0em;
+}
+
+.ai-index-m-swiper{
+    width: 100%;
+    overflow:hidden;
+    background:#fff;
+}
+
+.ai-index-m-swiper img{
+	width:100%;
+}
+
+.ai-index-swiper img{
+	width:100%;
+}
+
+.ai-index-h-grids{
+	position: relative;
+    overflow: hidden;
+	min-height: 6em;
+}
+
+.ai-index-h-app {
+	position: relative;
+    overflow: hidden;
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding:0.8em 0em;
+}
+
+.ai-index-h-a-t{
+	font-size: 0.8em;
+    bottom: 1em;
+    text-align: center;
+    color: #000000;
+}
+
+.ai-index-h-a-img{
+   	width: 3em;
+    height: 3em;
+    bottom: 2.2em;
+    margin: auto;
+}
+
+.ai-index-h-a-img img{
+  	width:100%;
+  	height: 100%;
+}
+
+
+.ai-index-h-app:active {
+    background-color: #e4e4e4
+}
+
+.ai-index-m{
+	border-bottom: 1px #dcdcdc solid;
+	border-top: 1px #dcdcdc solid;
+	overflow:hidden;
+	font-size: 0em;
+	margin-top:10px;
+}
+
+.ai-index-b{
+	border-top: 1px #dcdcdc solid;
+	overflow:hidden;
+	margin-top:10px;
+}
+
+.ai-index-app-grids{
+	position: relative;
+    overflow: hidden;
+    background:#fff;
+}
+
+.ai-index-app-grid {
+    position: relative;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px 0;
+}
+
+.ai-index-app-grid:before {
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid #d9d9d9;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+    right: -1px
+}
+
+.ai-index-app-grid:after,.ai-index-app-grid:before {
+    content: " ";
+    position: absolute;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%
+}
+
+.ai-index-app-grid:after {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #dcdcdc;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5)
+}
+
+.ai-index-app-grid:active {
+    background-color: #e4e4e4
+}
+
+.ai-index-app-grid .ai-index-icon{
+	position: absolute;
+    top: 0.5em;
+    height: 3em;
+    width: 3em;
+    right: 1em;
+}
+
+.ai-index-app-grid .ai-index-icon img{
+	width:100%;
+/* 	height:100%; */
+}
+
+.ai-index-app-grid .ai-index-txt{
+	text-overflow: ellipsis;
+    color: #343434;
+    font-size: 1em;
+    border-radius: 0.5em 0em 0em 0.5em;
+    -moz-border-radius: 0.5em 0em 0em 0.5em;
+    -webkit-border-radius: 0.5em 0em 0em 0.5em;
+    padding: 0.7em 4em 0.7em 0.6em;
+}
+
+.ai-index-app-grid .ai-index-txt-m{
+	color:#9e9e9e;
+    font-size: 0.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.swiper-slide {
+    background: #f2f3f4 url("../../../../UserModule/style/images/loading.gif") 50% no-repeat;
+    background-size: auto 2rem;
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fill_width">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="fill_parent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="root_layout" parent="@style/fill_parent">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="title_bar_button" parent="@style/wrap_content">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">@dimen/title_bar_padding_left</item>
+        <item name="android:paddingRight">@dimen/title_bar_padding_right</item>
+    </style>
+
+    <style name="task_item_right_btn">
+        <item name="android:layout_width">53.0dip</item>
+        <item name="android:layout_height">53.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="file_name_sty" parent="@style/wrap_content">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">#ff333333</item>
+    </style>
+
+    <style name="file_desc_sty" parent="@style/wrap_content">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">#ff9e9e9e</item>
+    </style>
+
+    <!-- 8月6号添加 -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light"/>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme"/>
+
+    <style name="CameraPlayerDialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <!-- dialog背景样式 -->
+        <!-- 背景透明 -->
+     	<item name="android:windowMinWidthMinor">99%</item>
+		<item name="android:backgroundDimEnabled">false</item> 
+	 	<item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

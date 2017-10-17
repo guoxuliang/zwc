@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+	
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:orientation="horizontal"
+			android:padding="10dp"
+			android:background="@drawable/header_bg">
+			
+	
+			<ImageView
+				android:id="@+id/back_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_alignParentLeft="true"
+				android:background="@drawable/back"/>
+	
+			<TextView
+				android:id="@+id/title_txt"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="18dp"
+				android:text="标题标题标题标题"
+				android:layout_centerInParent="true"
+				android:textColor="@color/black"
+				android:maxLength="6"
+				/>
+	
+			<ImageView
+			    android:id="@+id/close_img"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerInParent="true"
+				android:layout_alignParentRight="true"
+				android:background="@drawable/icon_close"/>
+	
+		</RelativeLayout>
+	
+		<WebView
+			android:id="@+id/webView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"/>
+	
+	</LinearLayout>
+	<FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+		android:layout_marginBottom="10dp">
+            <ProgressBar
+	                android:id="@+id/layout_progress"
+	                style="?android:attr/progressBarStyleLarge"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"/>
+	</FrameLayout>
+</RelativeLayout>

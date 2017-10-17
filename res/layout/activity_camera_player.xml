@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="500dp" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical" 
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/time_tv"
+            style="@style/wrap_content"
+            android:clickable="true"
+            android:textColor="@color/pull_gray"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:textSize="14sp" />
+
+        <TextView
+            style="@style/wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="close"
+            android:padding="4dp"
+            android:text="关闭"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/title_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp">
+
+        <FrameLayout
+            android:id="@+id/play_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+            <io.vov.vitamio.widget.CenterLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal" android:background="@color/black" >
+
+                <SurfaceView
+                    android:id="@+id/surfaceview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                </SurfaceView>
+            </io.vov.vitamio.widget.CenterLayout>
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" android:background="@color/black" android:id="@+id/layout_hide_progress">
+                <ProgressBar
+                    style="@android:style/Widget.Material.Light.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/black"
+                    android:layout_weight="3"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+</RelativeLayout>

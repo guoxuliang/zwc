@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.weichenggov.wc.main" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>在咸阳12345</name>
+    <preference name="AutoHideSplashScreen" value="false"/>
+    <!--该value的值为添加的图片的名称-->
+    <preference name="SplashScreen" value="screen" />
+    <!--如果设置为真,闪屏不是伸展以适应屏幕,而是简单地“覆盖”屏幕,像CSS中的“background-size:cover”。-->
+    <preference name="SplashMaintainAspectRatio" value="false" />
+    <!--是否只在应用启动时出现，默认为true-->
+    <preference name="SplashShowOnlyFirstTime" value="false" />
+    <!--该闪屏图片显示的时长-->
+    <preference name="SplashScreenDelay" value="30000" />
+    <!--隐藏淡入淡出-->
+    <preference name="FadeSplashScreen" value="false"/>
+    <!--隐藏启动画面那个laoding图片-->
+    <preference name="ShowSplashScreenSpinner" value="false"/>
+
+    <!-- 禁止页面底部和屏幕底部会出现一大片空白，然后松开手指后，再弹回去的特效 -->
+    <preference name="WebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="main.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <allow-navigation href="cdvfile:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="loadUrlTimeoutValue" value="60000" />
+    <feature name="HotCodePush">
+        <param name="android-package" value="com.nordnetab.chcp.main.HotCodePushPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HotCodePushLocalDevMode">
+        <param name="android-package" value="com.nordnetab.chcp.localdev.HotCodePushLocalDevPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+
+
+
+    <feature name="NetWorkPlugin">
+        <param name="android-package" value="org.apache.cordova.NetWorkPlugin" />
+    </feature>
+    <feature name="WebPlugin">
+        <param name="android-package" value="org.apache.cordova.WebPlugin" />
+    </feature>
+    <feature name="ToastPlugin">
+        <param name="android-package" value="org.apache.cordova.ToastPlugin" />
+    </feature>
+    <feature name="PositionPlugin">
+        <param name="android-package" value="org.apache.cordova.PositionPlugin" />
+    </feature>
+    <feature name="MacAddressPlugin">
+        <param name="android-package" value="org.apache.cordova.MacAddressPlugin" />
+    </feature>
+    <feature name="VideoPlugin">
+        <param name="android-package" value="org.apache.cordova.VideoPlugin" />
+    </feature>
+    <feature name="CameraPlayerPlugin">
+        <param name="android-package" value="org.apache.cordova.CameraPlayerPlugin" />
+    </feature>
+
+    <chcp>
+        <local-development enabled="true"/>
+        <config-file url="https://ydt.xy12345.cn/edot/upload/www/chcp.json"/>
+    </chcp>
+</widget>

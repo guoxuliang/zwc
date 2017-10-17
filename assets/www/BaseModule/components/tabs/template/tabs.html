@@ -1,0 +1,14 @@
+<div class="ai-tabs">
+	<ul id="ai-tabs-header">
+		{{@tabArr}}
+			<li ai-tabs-header-index="{{=_val.index}}"><a class="ai-tabs_title">{{%_val.name}}</a></li>
+		{{/@tabArr}}
+	</ul>
+</div>
+<div class="ai-tabs-content">
+	<ul id="ai-tabs-content">
+	{{@tabArr}}
+		<li ai-tabs-content-index="{{=_val.index}}"></li>
+	{{/@tabArr}}
+	</ul>
+</div>

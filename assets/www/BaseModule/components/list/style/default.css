@@ -1,0 +1,83 @@
+
+.aigov-list-dl{
+	
+}
+
+#aigov-list-content{
+	position:relative;
+	background: #fff;
+}
+
+.aigov-list-default-dd{
+	height: 3em;
+	border-bottom: 1px #dedede solid;
+}
+.aigov-list-default-dd>span{
+	width: 5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-left: 1em;
+	float: left;
+	line-height: 2.5em;
+}
+
+/******************** ����������ʽ ************************/
+.aigov-list-no-data{
+	height:4em;
+	line-height:4em;
+	position:relative;
+	border-bottom:1px #dedede solid;
+	color:#999;
+	text-align:center;
+	width:100%;
+	overflow:auto;
+}
+
+/****** ����ˢ�¡��������ظ�����ʽ********/
+#aigov-list-pulldown, #aigov-list-pullup {
+	background:#fff;
+	height:40px;
+	line-height:40px;
+	padding:5px 10px;
+	border-bottom:1px solid #ccc;
+	font-weight:bold;
+	font-size:14px;
+	color:#888;
+	text-align:center;
+}
+
+#aigov-list-pulldown .aigov-list-pulldown-icon, #aigov-list-pullup .aigov-list-pullup-icon  {
+	display: inline-block;
+	width:40px;
+	height:40px;
+	line-height: 40px;
+	vertical-align: middle;
+	background:url(images/pull-icon@2x.png) 0 0 no-repeat;
+	-webkit-background-size:40px 80px; background-size:40px 80px;
+	-webkit-transition-property:-webkit-transform;
+	-webkit-transition-duration:250ms;	
+}
+
+#aigov-list-pulldown .aigov-list-pulldown-icon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#aigov-list-pullup .aigov-list-pullup-icon  {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#aigov-list-pulldown.flip .aigov-list-pulldown-icon {
+	-webkit-transform:rotate(-180deg) translateZ(0);
+}
+
+#aigov-list-pullup.flip .aigov-list-pullup-icon {
+	-webkit-transform:rotate(0deg) translateZ(0);
+}
+
+#aigov-list-pulldown.loading .aigov-list-pulldown-icon, #aigov-list-pullup.loading .aigov-list-pullup-icon {
+	background:url(images/loading.gif) 0 0 no-repeat;
+	-webkit-background-size: 60% 60%;
+    background-position: center;
+}
+

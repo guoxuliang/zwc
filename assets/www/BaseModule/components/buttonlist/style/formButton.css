@@ -1,0 +1,59 @@
+.aigov-buttonlist-TPFooterBtns, .TPFooterBtns * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1em;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+.aigov-buttonlist-TPFooterBtns {
+	width: 100%;
+}
+
+.aigov-buttonlist-TPFooterBtns td:first-child {
+	border-left: 0 transparent none;
+}
+
+.aigov-buttonlist-TPFooterBtns td {
+height:3em;line-height:3em;
+	position: relative;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	border-left: 1px #000 solid;
+}
+
+.aigov-buttonlist-TPFooterBtns td.cur{
+	background:#000;
+}
+
+.aigov-buttonlist-TPFooterBtns td a {
+	color: #fff;
+font-size:1.25em;
+position:relative;
+top:0em:
+}
+
+.aigov-buttonlist-TPFooterBtns td:last-child {
+	background: #2384d1;
+}
+
+/* ��ʾ */
+.aigov-buttonlist-tips-01{
+	font-size:0.6em;
+	display:block;
+	background:#f00f0f;
+	border:2px #fff solid;
+	border-radius:1em;
+	color:#fff;	
+	position:absolute;
+	padding:0.1em 0.3em;
+	height:1.2em;
+	line-height:1.1em;
+	min-width:1em;
+	text-align:center;
+top:-0.5em;right:-1.75em;
+
+}

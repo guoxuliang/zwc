@@ -1,0 +1,66 @@
+.aigov-search{
+	position:absolute;
+	top:0rem;
+	width:100%;
+	height: 3em;
+	line-height: 3em;
+	background: -webkit-linear-gradient(top,#fbfcfc,#f1f0f0);
+	-webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	z-index: 1;
+	text-align: center;
+
+}
+.aigov-search-inputbox{
+	position: absolute;
+	top: 50%;
+	height: 1.8rem;
+	margin-top: -0.9rem;
+	left: 0.5rem;
+	right: 0.5rem;
+	color: #b4b3b4;
+	border-radius: 8px;
+	background: #fff;
+	border: 1px #FFFFFF solid;
+	box-shadow: 0 0 0.2em #D5CFCF;
+}
+.aigov-search-input{
+	border: 0px transparent none;
+	background: transparent;
+	display: block;
+	text-indent: 0.5rem;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 5em;
+	padding-left: 0.5em;
+}
+
+.aigov-search-icon{
+	border: 0px transparent none;
+	width: 2rem;
+	height: 2rem;
+	background: url(images/searchBtnBg.png) no-repeat center center;
+	display: block;
+	position: absolute;
+	right: 0.8rem;
+	top: 0em;
+	-webkit-background-size: 130%;
+}
+
+.aigov-search-close-btn{
+	border: 0px transparent none;
+	width: 2rem;
+	height: 2rem;
+	background: url(images/close_b.png) no-repeat center center;
+	display: block;
+	position: absolute;
+	right: 3rem;
+	top: 50%;
+	margin-top: -1rem;
+	-webkit-background-size: 40%;
+}
+.aigov-search-close-btn.cur{
+	background-color:#aaa;
+}

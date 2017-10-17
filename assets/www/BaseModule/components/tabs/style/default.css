@@ -1,0 +1,66 @@
+@CHARSET "utf-8";
+
+.ai-tabs{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2.3em;
+	box-shadow: 0 0.3em 1em #999;
+}
+
+.ai-tabs td.ai-tabs-select {
+	border-bottom: 0.2em #329de5 solid;
+}
+
+.ai-tabs td {
+	color: #378fd5;
+	font-weight: bold;
+	text-align: center;
+	height: 2.3em;
+	line-height: 2.3em;
+	border-bottom: 0.2em #f1f1f1 solid;
+	background-image: -webkit-gradient(
+	 linear,
+	 100% 10%,
+	 100% 100%,
+	 color-stop(0, #fcfcfc),
+	 color-stop(1, #f1f1f1)
+	 );
+}
+
+.ai-tabs .ai-tabs_title{display:block;min-width: 5em;}
+
+.ai-tabs .ai-tabs-prev{
+	color:rgb(227,227,227);
+}
+
+.ai-tabs .ai-tabs-next{
+	color:rgb(227,227,227);
+}
+
+.ai-tabs .ai-tabs-prev.ai-tabs-active, .ai-tabs .ai-tabs-next.ai-tabs-active{
+	color:rgb(0,128,128);
+}
+
+.ai-tabs-content{
+	position: absolute;
+	top: 2.5em;
+	bottom: 0em;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+.ai-tabs-content>ul {
+position: absolute;
+top: 0;
+bottom: 0;
+width: 100%;
+}
+
+.ai-tabs-content>ul>li {
+position: relative;
+float: left;
+height: 100%;
+}
